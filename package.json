@@ -1,11 +1,9 @@
 {
-  "name": "linechat",
-  "version": "1.0.0",
-  "description": "",
-  "main": "webhook.js",
+  "name": "web",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ."
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "authorize": "0.0.1",
@@ -13,11 +11,11 @@
     "debug": "~2.6.9",
     "dotenv": "^6.0.0",
     "ejs": "~2.5.7",
-    "express": "^4.16.3",
+    "express": "~4.16.0",
     "express-session": "^1.15.6",
     "faker": "^4.1.0",
     "http-errors": "~1.6.2",
-    "linebot": "^1.4.1",
+    "koa": "^2.5.2",
     "moment": "^2.22.2",
     "mongoose": "^5.2.3",
     "morgan": "~1.9.0",
