@@ -1,5 +1,12 @@
-var linebot = require('linebot');
 var express = require('express');
+var router = express.Router();
+var linebot = require('linebot');
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
 
 var bot = linebot({
   channelId: "1593876483",
@@ -20,3 +27,5 @@ var server = app.listen(process.env.PORT || 8080, function() {
   var port = server.address().port;
   console.log("App now running on port", port);
 });
+
+module.exports = router;
